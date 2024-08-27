@@ -10,7 +10,7 @@ import { persistStore } from "redux-persist";
 
 let persistor = persistStore(store);
 
-export const BASE_URL = "http://localhost:300";
+export const BASE_URL = "http://localhost:3000";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
