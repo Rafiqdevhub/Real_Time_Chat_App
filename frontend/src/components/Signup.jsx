@@ -97,25 +97,25 @@ const Signup = () => {
               placeholder="Confirm Password"
             />
           </div>
-          <div className="flex items-center my-4">
+          <div className="flex items-center my-4 ">
             <div className="flex items-center">
-              <p>Male</p>
+              <p className="text-lg mr-2">Male</p>
               <input
                 type="checkbox"
                 checked={user.gender === "male"}
                 onChange={() => handleCheckbox("male")}
                 defaultChecked
-                className="checkbox mx-2"
+                className="checkbox mx-4 w-8 h-8 text-sky-500 border-sky-500 focus:ring-sky-300 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110"
               />
             </div>
             <div className="flex items-center">
-              <p>Female</p>
+              <p className="text-lg mr-2">Female</p>
               <input
                 type="checkbox"
                 checked={user.gender === "female"}
                 onChange={() => handleCheckbox("female")}
                 defaultChecked
-                className="checkbox mx-2"
+                className="checkbox mx-4 w-8 h-8 text-sky-500 border-sky-500 focus:ring-sky-300 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110"
               />
             </div>
           </div>
