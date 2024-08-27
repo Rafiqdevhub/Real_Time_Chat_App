@@ -66,12 +66,16 @@ const Login = () => {
             />
           </div>
           <p className="text-center my-2">
-            Don&apos;t have an account? <Link to="/signup"> signup </Link>
+            Don&apos;t have an account?{" "}
+            <Link to="/signup" className="text-2xl underline text-cyan-400">
+              {" "}
+              signup{" "}
+            </Link>
           </p>
           <div>
             <button
               type="submit"
-              className="btn btn-block btn-sm mt-2 border border-slate-700"
+              className="btn btn-block btn-sm mt-2 border border-slate-700 text-1.5xl"
             >
               Login
             </button>
