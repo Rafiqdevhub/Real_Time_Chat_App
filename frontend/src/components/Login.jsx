@@ -4,7 +4,8 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setAuthUser } from "../redux/userSlice";
-import { BASE_URL } from "..";
+
+const BASE_URL = "http://localhost:3000";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -65,7 +66,7 @@ const Login = () => {
             />
           </div>
           <p className="text-center my-2">
-            Don't have an account? <Link to="/signup"> signup </Link>
+            Don&apos;t have an account? <Link to="/signup"> signup </Link>
           </p>
           <div>
             <button
