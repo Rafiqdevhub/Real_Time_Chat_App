@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db.js");
 const userRoute = require("./routes/userRoute.js");
-// const messageRoute = require("./routes/messageRoute.js");
+const messageRoute = require("./routes/messageRoute.js");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
@@ -23,7 +23,7 @@ app.use(cors(corsOption));
 
 // routes
 app.use("/api/v1/user", userRoute);
-// app.use("/api/v1/message", messageRoute);
+app.use("/api/v1/message", messageRoute);
 
 app.listen(PORT, () => {
   connectDB();
