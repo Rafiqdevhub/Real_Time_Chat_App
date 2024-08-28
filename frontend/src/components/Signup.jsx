@@ -104,7 +104,6 @@ const Signup = () => {
                 type="checkbox"
                 checked={user.gender === "male"}
                 onChange={() => handleCheckbox("male")}
-                defaultChecked
                 className="checkbox mx-4 w-8 h-8 text-sky-500 border-sky-500 focus:ring-sky-300 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110"
               />
             </div>
@@ -114,7 +113,6 @@ const Signup = () => {
                 type="checkbox"
                 checked={user.gender === "female"}
                 onChange={() => handleCheckbox("female")}
-                defaultChecked
                 className="checkbox mx-4 w-8 h-8 text-sky-500 border-sky-500 focus:ring-sky-300 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-110"
               />
             </div>
