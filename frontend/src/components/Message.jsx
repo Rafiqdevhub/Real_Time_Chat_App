@@ -29,7 +29,7 @@ const Message = ({ message }) => {
         </div>
       </div>
       <div className="chat-header">
-        <time className="text-xs opacity-50 text-white">12:45</time>
+        <time className="text-xs opacity-50 text-white">9:00</time>
       </div>
       <div
         className={`chat-bubble ${

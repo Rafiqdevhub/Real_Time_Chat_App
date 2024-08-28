@@ -1,13 +1,11 @@
 import SendInput from "./SendInput";
 import Messages from "./Messages";
-import { useSelector, useDispatch } from "react-redux";
-import { setSelectedUser } from "../redux/userSlice";
+import { useSelector } from "react-redux";
 
 const MessageContainer = () => {
   const { selectedUser, authUser, onlineUsers } = useSelector(
     (store) => store.user
   );
-  const dispatch = useDispatch();
 
   const isOnline = onlineUsers?.includes(selectedUser?._id);
 
@@ -35,7 +33,7 @@ const MessageContainer = () => {
           <h1 className="text-4xl text-white font-bold">
             Hi,{authUser?.fullName}{" "}
           </h1>
-          <h1 className="text-2xl text-white">Let's start conversation</h1>
+          <h1 className="text-2xl text-white">Let&apos;s start conversation</h1>
         </div>
       )}
     </>
