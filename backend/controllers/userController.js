@@ -31,7 +31,7 @@ const register = async (req, res) => {
       profilePhoto: gender === "male" ? maleProfilePhoto : femaleProfilePhoto,
       gender,
     });
-    return res.status(201).send(userData).json({
+    return res.status(201).json({
       message: "Account created successfully.",
       success: true,
     });
